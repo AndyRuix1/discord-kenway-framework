@@ -467,8 +467,8 @@ Esta estructura de carpetas jerárquica proporciona una manera eficiente de gest
 El framework se encuentra actualmente en desarrollo y es de código abierto. ¡Nos encanta la colaboración de la comunidad! Si deseas contribuir, puedes hacerlo de las siguientes maneras:
 
 #### Contribuciones
-* Si encuentras un error o tienes una sugerencia, por favor, abre un [issue](URL_DEL_REPOSITORIO/issues).
-* Si quieres realizar mejoras o cambios en el código, eres bienvenido/a a hacer un [fork](URL_DEL_REPOSITORIO/fork) del repositorio, hacer tus modificaciones y enviar un [pull request](URL_DEL_REPOSITORIO/pulls).
+* Si encuentras un error o tienes una sugerencia, por favor, abre un [issue](https://github.com/AndyRuix1/discord-kenway-framework/issues).
+* Si quieres realizar mejoras o cambios en el código, eres bienvenido/a a hacer un [fork](https://github.com/AndyRuix1/discord-kenway-framework/fork) del repositorio, hacer tus modificaciones y enviar un [pull request](https://github.com/AndyRuix1/discord-kenway-framework/pulls).
 
 #### Desarrolladores
 * [Andy Kenway](https://discordapp.com/users/340757879915151361)
