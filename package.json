@@ -1,6 +1,6 @@
 {
   "name": "discord-kenway-framework",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Un potente framework de Discord.js que te permite crear fácilmente comandos, eventos y configurar el cliente de Discord. Diseñado para facilitar el desarrollo de bots, este framework ofrece una estructura flexible que permite organizar tus comandos y eventos en carpetas personalizadas. Además, proporciona funcionalidades avanzadas, como la capacidad de cambiar dinámicamente los 'presence' del bot en un orden específico definido por el usuario, permitiendo una mayor personalización y respuesta a las necesidades de tu comunidad. Con el control total sobre el tiempo de frecuencia deseado, puedes mantener actualizada la presencia del bot de acuerdo con tus preferencias. ¡Simplifica y acelera la creación de bots de Discord con este framework versátil y poderoso!",
   "main": "index.js",
   "scripts": {

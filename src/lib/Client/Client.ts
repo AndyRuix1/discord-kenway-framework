@@ -196,6 +196,10 @@ export default class Client {
             if (commandsLoaded.length > 0) {
                 for (const commandLoaded of commandsLoaded) {
                     const filename = basename(commandLoaded);
+                    if (filename.endsWith('.ignore.ts') || filename.endsWith('ignore.js')) {
+                        debugCommand(`ignorado: ${highlight(filename, ETerminalColors.BrightCyan)}`);
+                        continue;
+                    }
                     const filepath = dirname(commandLoaded);
                     const requiredFile = require(pathJoin(filepath, filename));
                     const command: Command = requiredFile?.default ? requiredFile.default : requiredFile;
@@ -228,6 +232,10 @@ export default class Client {
         for (const eventLoaded of eventsLoaded) {
             const filepath = dirname(eventLoaded);
             const filename = basename(eventLoaded);
+            if (filename.endsWith('.ignore.ts') || filename.endsWith('ignore.js')) {
+                debugEvent(`ignorado: ${highlight(filename, ETerminalColors.BrightCyan)}`);
+                continue;
+            }
             const fileRequired = require(pathJoin(filepath, filename));
             const event = fileRequired?.default ? fileRequired.default : fileRequired;
             debugEventLoaded(event);
