@@ -1,7 +1,7 @@
+import type { TCommand$Options, TCommand } from '../Commands';
 import { stringPropertyAreValid } from './index';
 import { debugError, ErrorMessages } from '../Debug';
 import { SlashCommandAttachmentOption, SlashCommandStringOption, SlashCommandBooleanOption, SlashCommandChannelOption, SlashCommandIntegerOption, SlashCommandMentionableOption, SlashCommandNumberOption, SlashCommandRoleOption, SlashCommandSubcommandBuilder, SlashCommandSubcommandGroupBuilder } from "discord.js";
-import { TCommand$Options, TCommand } from '../Commands';
 
 
 export const isInstanceOfTCommandOptions = (obj: any): obj is TCommand$Options => {
@@ -23,5 +23,4 @@ export const validateCommandOptions = (options: TCommand) => {
     if ('subcommandsGroup' in options && options.subcommandsGroup && (!Array.isArray(options.subcommandsGroup) || (options.subcommandsGroup.length > 0 && !options.subcommandsGroup.some(s => s instanceof SlashCommandSubcommandGroupBuilder)))) debugError(ErrorMessages.Command.SubcommandGroup(options.name));
     if ('isNSFW' in options && typeof options.isNSFW !== 'boolean') debugError(ErrorMessages.Command.NSFW(options.name))
     if ('executable' in options && typeof options.executable !== 'function') debugError(ErrorMessages.Command.Executable(options.name));
-
 }
