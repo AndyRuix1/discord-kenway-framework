@@ -11,11 +11,17 @@ puedes volver aquí para ver la información de cambios de las diferentes versio
 ### 📖 Glosario
 
 ```
-• Experimental: Versión no estable con posible posesión de errores.
+• Experimental: Versión no estable con posible posesión de errores, algunas funciones pueden ser experimentales (podrían ser eliminadas o modificadas en el futuro).
 • Estable: Versión estable con posibilidades mínimas de posesión de errores.
 ```
 
 # 📜 Versiones
+
+## v1.0.6 - Estable
+
+* Actualización a discord.js 14.15.2.
+* Solución de problemas mínimos.
+
 
 ## v1.0.5 - Estable
 

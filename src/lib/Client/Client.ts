@@ -13,7 +13,7 @@ import { TCommand, Command, createSlashCommand } from '../Commands';
 import { EPresenceUpdateStatus, IActivities, IClient, IClient$Presence, IClient$SetPresence } from './Client.types';
 import fs from 'fs';
 
-import { debugError, ErrorMessages, debugCommand, debugEvent, debugBot, debug, ETerminalColors, debugSuccess, debugInfo, debugCommandLoaded, debugEventLoaded, highlight } from '../Debug';
+import { debugError, ErrorMessages, debugCommand, debugEvent, debugBot, ETerminalColors, debugSuccess, debugInfo, debugCommandLoaded, debugEventLoaded, highlight } from '../Debug';
 
 import { getFiles } from '../utils';
 import { join as pathJoin, basename, dirname } from 'path';
@@ -156,7 +156,7 @@ export default class Client {
         debugBot(`[${highlight(this.intents.length)}] intent(s) cargado(s) | [${highlight(this.partials.length)}] partial(s) cargado(s)`);
         debugBot(`[${highlight(this.presences.activities.length)}] presence(s) cargados | cambio automático: ${highlight(`${this.presences.presenceUpdateFrequency / 1000}s`)}`);
 
-        const client = new DiscordClient({ intents: this.intents, partials: this.partials });
+        const client = new DiscordClient<true>({ intents: this.intents, partials: this.partials });
 
         if (this.events.length > 0) for (const event of this.events) {
             client.on(event.name, (...args) => event.execute(client, ...args));

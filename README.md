@@ -32,7 +32,7 @@ Bienvenido/a, esta es la guía para navegación en la página.
 > * [Desarrollo](#🛠️-Desarrollo)
 
 ## 📜 Historial de cambios
-* Para acceder al historial de cambios completo del paquete, consulta [este enlace]((https://github.com/AndyRuix1/discord-kenway-framework/blob/main/CHANGELOG.md)).
+* Para acceder al historial de cambios completo del paquete, consulta [este enlace](https://github.com/AndyRuix1/discord-kenway-framework/blob/main/CHANGELOG.md).
 
 
 ## ⤵️ Instalación
