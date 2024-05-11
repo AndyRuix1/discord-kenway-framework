@@ -1,4 +1,4 @@
-import { Client as DiscordClient, ClientEvents, Events } from 'discord.js';
+import { Client as DiscordClient, type ClientEvents } from 'discord.js';
 
 export interface IEvent<K> {
     /**
