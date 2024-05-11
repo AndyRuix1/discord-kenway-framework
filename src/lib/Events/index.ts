@@ -1,7 +1,7 @@
-import { ClientEvents, Client as DiscordClient, Events } from "discord.js";
+import type { IEvent } from "./Events.types";
+import { type ClientEvents, Client as DiscordClient, Events } from "discord.js";
 import { debugError, ErrorMessages } from "../Debug";
 import { stringPropertyAreValid } from "../utils";
-import { IEvent } from "./Events.types";
 
 
 export default class Event<K extends keyof ClientEvents> {
