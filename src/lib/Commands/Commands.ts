@@ -1,7 +1,7 @@
+import type { TCommand, TCommand$Options } from "./Commands.types";
 import { SlashCommandBuilder, SlashCommandSubcommandBuilder, SlashCommandSubcommandGroupBuilder, SlashCommandAttachmentOption, SlashCommandStringOption, SlashCommandBooleanOption, SlashCommandChannelOption, SlashCommandIntegerOption, SlashCommandMentionableOption, SlashCommandNumberOption, SlashCommandRoleOption, ChatInputCommandInteraction, SlashCommandUserOption } from "discord.js";
 import { debugError, ErrorMessages } from "../Debug";
 import { stringPropertyAreValid, isInstanceOfTCommandOptions } from "../utils";
-import { TCommand, TCommand$Options } from "./Commands.types";
 
 
 export default class Command {
